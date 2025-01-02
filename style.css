@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Hero Section Styling */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 0 20px; /* Memberikan padding agar teks tidak terlalu melebar */
+}
+
+.hero-content .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+}
+  
+/* SWIPER */
+  .swiper {
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: black !important; /* Ubah warna panah menjadi hitam */
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+
+/* NAVBAR */
+.navbar {
+    background-color:   #43766C;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan di bawah navbar */
+    padding: 10px 0; /* Tambahkan padding untuk memberi ruang pada elemen navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-nav {
+    display: flex; /* Gunakan flexbox untuk distribusi item */
+    gap: 15px; /* Tambahkan jarak antar elemen ul > li */
+}
+
+.navbar-nav .nav-item {
+    padding: 0 10px; /* Tambahkan padding di kiri dan kanan tiap item */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none; /* Hapus dekorasi bawaan */
+    position: relative;
+    padding-bottom: 5px; /* Tambahkan ruang di bawah teks */
+    transition: color 0.3s ease; /* Efek halus pada teks */
+    letter-spacing: 0.5px; /* Tambahkan spasi antar huruf agar lebih elegan */
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0; /* Pastikan garis berada tepat di bawah teks */
+    bottom: 0; /* Tempatkan garis di bagian bawah teks */
+    width: 0;
+    height: 2px; /* Ketebalan garis */
+    background-color: #F8FAE5; /* Warna garis */
+    transition: width 0.3s ease; /* Efek animasi garis */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F8FAE5; /* Warna teks berubah menjadi emas saat hover */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Garis meluas sepanjang teks */
+}
+
+/* Styling Title */
+section h2 {
+    font-size: 2.5rem; /* Ukuran besar untuk mencolok */
+    font-weight: bold; /* Penekanan pada teks */
+    text-align: center; /* Pusatkan teks */
+    color: #333; /* Warna abu-abu gelap untuk elegansi */
+    position: relative; /* Dibutuhkan untuk garis dekorasi */
+    margin-bottom: 30px; /* Jarak dengan konten di bawahnya */
+}
+
+section h2::after {
+    content: ''; /* Elemen dekoratif garis bawah */
+    position: absolute;
+    left: 50%; /* Tempatkan di tengah */
+    bottom: -10px; /* Jarak garis dari teks */
+    transform: translateX(-50%); /* Pusatkan garis */
+    width: 60px; /* Panjang garis */
+    height: 4px; /* Ketebalan garis */
+    background-color: #f0a500; /* Warna emas untuk garis */
+    border-radius: 2px; /* Melengkungkan ujung garis */
+}
+
+/* Styling untuk Section Peta */
+#peta {
+    background-color: #F8FAE5; /* Warna latar belakang yang senada */
+    padding: 50px 20px; /* Tambahkan padding */
+    border-top: 5px solid #43766C; /* Tambahkan garis atas */
+    border-bottom: 5px solid #43766C; /* Tambahkan garis bawah */
+  }
+  
+  #peta h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #43766C; /* Warna hijau yang selaras */
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  #peta h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #f0a500;
+    border-radius: 2px;
+  }
+  
+  /* Styling untuk Iframe Peta */
+  #peta iframe {
+    width: 100%; /* Lebar penuh untuk responsivitas */
+    height: 450px; /* Tinggi tetap */
+    border: 5px solid #43766C; /* Border hijau dengan ketebalan */
+    border-radius: 10px; /* Border melengkung untuk estetika */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek saat hover */
+  }
+  
+  #peta iframe:hover {
+    transform: scale(1.02); /* Sedikit perbesar saat hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan lebih besar */
+  }
+
+
+/* PENDUDUK */
+  #penduduk {
+    background-color: #F8FAE5; /* Warna latar belakang senada */
+    padding: 50px 20px; /* Padding untuk memberi ruang */
+    border-top: 5px solid #43766C; /* Garis hijau di atas */
+    border-bottom: 5px solid #43766C; /* Garis hijau di bawah */
+}
+
+#penduduk h2 {
+    font-size: 2.5rem; /* Ukuran teks besar */
+    font-weight: bold; /* Teks lebih menonjol */
+    text-align: center; /* Teks di tengah */
+    color: #43766C; /* Warna hijau selaras */
+    position: relative; /* Dibutuhkan untuk garis dekorasi */
+    margin-bottom: 30px; /* Jarak dengan elemen berikutnya */
+}
+
+#penduduk h2::after {
+    content: ''; /* Elemen dekoratif */
+    position: absolute;
+    left: 50%; /* Tempatkan di tengah */
+    bottom: -10px; /* Garis sedikit di bawah teks */
+    transform: translateX(-50%); /* Pusatkan garis */
+    width: 80px; /* Panjang garis */
+    height: 4px; /* Ketebalan garis */
+    background-color: #f0a500; /* Warna emas */
+    border-radius: 2px; /* Garis dengan ujung melengkung */
+}
+
+#penduduk p {
+    font-size: 1rem; /* Ukuran teks sedang */
+    text-align: center; /* Pusatkan teks */
+    color: #333; /* Warna abu gelap */
+    margin-bottom: 40px; /* Jarak dengan tabel */
+}
+
+#penduduk table {
+    width: 100%; /* Lebar penuh tabel */
+    border-collapse: collapse; /* Hilangkan jarak antar sel */
+    background-color: #ffffff; /* Warna dasar tabel */
+    border: 1px solid #c1d4c3; /* Border hijau terang */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    margin: 0 auto; /* Pusatkan tabel */
+    font-family: Arial, sans-serif; /* Font yang sederhana */
+}
+
+#penduduk th, #penduduk td {
+    padding: 15px; /* Ruang di dalam sel */
+    text-align: center; /* Teks di tengah */
+    border: 1px solid #c1d4c3; /* Garis antar sel dengan warna hijau terang */
+    font-size: 1rem; /* Ukuran teks sedang */
+    color: #333; /* Warna teks abu gelap */
+}
+
+
+
+#penduduk th {
+    background-color: #e8f5e9; /* Warna hijau muda */
+    font-weight: bold; /* Penekanan pada judul kolom */
+}
+
+#penduduk td {
+    background-color: #e8f5e9; /* Warna hijau yang sangat lembut */
+    color: #4a4a4a; /* Warna teks abu sedang */
+}
+
+#penduduk tr:nth-child(even) td {
+    background-color: #e0f2e9; /* Warna hijau lebih terang untuk baris genap */
+}
+
+#penduduk th.red-box {
+    background-color: #e8f5e9; /* Hijau terang untuk elemen angka penting */
+    font-weight: bold; /* Tekankan angka penting */
+}
+  

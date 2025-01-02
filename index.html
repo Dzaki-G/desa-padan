@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desa Ketapang</title>
+  <!-- Link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"> <img src="./asset/logo.png" alt="Logo Desa" class="me-2" style="width: 60px; height: 60px;"> Desa Padan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#berita">Berita</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="hero-content" style="background: url('./asset/desa.jpg') no-repeat center center/cover;">
+            <div class="overlay">
+              
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="hero-content" style="background: url('./asset/desa2.jpg') no-repeat center center/cover;">
+            <div class="overlay">
+              
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="hero-content" style="background: url('./asset/desa3.jpg') no-repeat center center/cover;">
+            <div class="overlay">
+              
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="hero-content" style="background: url('./asset/desa5.jpg') no-repeat center center/cover;">
+            <div class="overlay">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  
+
+
+
+<!-- Profile -->
+<section id="profile" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Profil Desa</h2>
+  
+     <!-- Visi dan Misi -->
+    <div class="row">
+        <!-- Visi -->
+        <div class="col-md-6">
+          <div class="bg-light p-4 rounded shadow-sm">
+            <h3 class="text-center">Visi</h3>
+            <p class="text-center">"Membangun Desa Padan yang Mandiri, Berdaya Saing, dan Sejahtera dengan Semangat Gotong Royong."</p>
+          </div>
+        </div>
+        <!-- Misi -->
+        <div class="col-md-6">
+          <div class="bg-light p-4 rounded shadow-sm">
+            <h3 class="text-center">Misi</h3>
+            <ul>
+              <li>Meningkatkan pelayanan publik yang transparan dan akuntabel.</li>
+              <li>Mengembangkan potensi sumber daya alam dan manusia desa.</li>
+              <li>Mendorong pemberdayaan ekonomi melalui UMKM dan pertanian.</li>
+              <li>Menciptakan lingkungan desa yang nyaman dan lestari.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Struktur Organisasi -->
+      <div class="mt-5">
+        <h2 class="text-center mb-4">Struktur Organisasi Desa</h2>
+        <div class="row justify-content-center">
+          <!-- Kepala Desa -->
+          <div class="col-md-4 text-center">
+            <div class="card p-3">
+              <img src="./asset/ge.jpg" alt="Kepala Desa" class="card-img-top rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;">
+              <h5 class="mt-3">Bapak A</h5>
+              <p class="text-muted">Kepala Desa</p>
+            </div>
+          </div>
+  
+          <!-- Sekretaris Desa -->
+          <div class="col-md-4 text-center">
+            <div class="card p-3">
+              <img src="./asset/ge.jpg" alt="Sekretaris Desa" class="card-img-top rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;">
+              <h5 class="mt-3">Ibu B</h5>
+              <p class="text-muted">Sekretaris Desa</p>
+            </div>
+          </div>
+  
+          <!-- Kepala Dusun -->
+          <div class="col-md-4 text-center">
+            <div class="card p-3">
+              <img src="./asset/ge.jpg" alt="Kepala Dusun" class="card-img-top rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;">
+              <h5 class="mt-3">Bapak C</h5>
+              <p class="text-muted">Kepala Dusun</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Placeholder Sections -->
+
+<!-- Peta Desa -->
+<section id="peta" class="container py-5">
+  <h2 class="text-center mb-4">Peta Desa dan Wilayah</h2>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13352.498942800217!2d105.6453015194342!3d-5.753143323949554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e410e8070a970f1%3A0x348e275b210adf20!2sPadan%2C%20Penengahan%2C%20South%20Lampung%20Regency%2C%20Lampung!5e0!3m2!1sen!2sid!4v1735826504286!5m2!1sen!2sid"
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+<section id="penduduk" class="container py-5">
+  <h2>Administrasi Penduduk</h2>
+  <table>
+    <tbody>
+      <tr>
+        <th class="red-box">1.143</th>
+        <th>Penduduk</th>
+        <th class="red-box">599</th>
+        <th>Laki-laki</th>
+      </tr>
+      <tr>
+        <th class="red-box">300</th>
+        <th>Kepala Keluarga</th>
+        <th class="red-box">544</th>
+        <th>Perempuan</th>
+      </tr>
+      <tr>
+        <th class="red-box">59</th>
+        <th>Penduduk Sementara</th>
+        <th class="red-box">8</th>
+        <th>Mutasi Penduduk</th>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<br>
+<br>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- File script.js -->
+<script src="script.js"></script>
+</body>
+</html>
